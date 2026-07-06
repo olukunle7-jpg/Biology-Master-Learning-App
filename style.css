@@ -1,1 +1,101 @@
-
+/* ==========================================
+   BIOLOGY MASTER LEARNING APP
+   Version 2.0
+   Developed by Rev. Olukunle Adewale Ope
+========================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --primary:#2E7D32;
+    --secondary:#43A047;
+    --accent:#1565C0;
+    --gold:#FFC107;
+    --light:#F4FFF4;
+    --white:#FFFFFF;
+    --dark:#263238;
+    --shadow:0 8px 20px rgba(0,0,0,.15);
+}
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
+}
+header{
+    background:linear-gradient(135deg,#2E7D32,#43A047);
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    box-shadow:var(--shadow);
+}
+.logo{
+    font-size:30px;
+    font-weight:700;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+nav a:hover{
+    color:var(--gold);
+}
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+.hero h1{
+    font-size:48px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px
+}
+.hero button{
+    margin:15px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:var(--primary);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+.hero button:hover{
+    background:var(--accent);
+    transform:translateY(-3px);
+}
+.search-section{
+    padding:50px 20px;
+    text-align:center;
+}
+.search-section h2{
+    color:var(--primary);
+    margin-bottom:20px;
+}
+#searchBox{
+    width:90%;
+    max-width:700px;
+    padding:18px;
+    border:2px solid var(--secondary);
+    border-radius:50px;
+    font-size:18px;
+}
